@@ -1,5 +1,16 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
+const revealTargets = document.querySelectorAll('.problem-list, .approach, .how-grid, #contact-form');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+revealTargets.forEach((el) => revealObserver.observe(el));
+
 const form = document.getElementById('contact-form');
 const status = document.getElementById('form-status');
 
