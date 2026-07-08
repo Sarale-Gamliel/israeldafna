@@ -14,6 +14,19 @@ revealTargets.forEach((el) => revealObserver.observe(el));
 const form = document.getElementById('contact-form');
 const status = document.getElementById('form-status');
 
+const emailLink = document.getElementById('email-link');
+const emailHint = document.getElementById('email-hint');
+
+emailLink.addEventListener('click', () => {
+  const email = emailLink.href.replace('mailto:', '');
+  if (!navigator.clipboard) return;
+
+  navigator.clipboard.writeText(email).then(() => {
+    emailHint.textContent = `הכתובת ${email} הועתקה - אפשר להדביק בג'ימייל או בכל שירות מייל`;
+    setTimeout(() => { emailHint.textContent = ''; }, 6000);
+  }).catch(() => {});
+});
+
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   status.textContent = 'שולח...';

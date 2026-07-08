@@ -353,6 +353,13 @@ section h2::after {
   margin-top: 36px;
 }
 
+.email-hint {
+  margin-top: 10px;
+  min-height: 1.2em;
+  color: var(--teal);
+  font-size: 0.9rem;
+}
+
 /* Footer */
 .site-footer {
   background: var(--teal-dark);
