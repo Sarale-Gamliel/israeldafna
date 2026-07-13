@@ -51,8 +51,12 @@ ul {
 .hero {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(160deg, var(--navy-dark) 0%, var(--navy) 55%, var(--navy-dark) 100%);
-  padding: 90px 0 72px;
+  background:
+    linear-gradient(160deg, rgba(12, 24, 38, 0.9) 0%, rgba(22, 40, 63, 0.72) 55%, rgba(12, 24, 38, 0.94) 100%),
+    url('assets/hero.png');
+  background-size: cover;
+  background-position: center 30%;
+  padding: 110px 0 90px;
   text-align: center;
   border-bottom: 2px solid var(--gold);
 }
