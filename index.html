@@ -3,100 +3,289 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ישראל דפנה | כמה זמן עוד תמשיך להילחם בעצמך בשקט?</title>
+<title>ישראל דפנה | הפתרון החכם והמקצועי לשקט נפשי</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Heebo:wght@700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="hero">
-  <div class="container">
-    <p class="welcome">ישראל | מטפל רגשי מוסמך</p>
-    <h1>ישראל דפנה</h1>
-    <p class="tagline">כמה זמן עוד תמשיך<br>להילחם בעצמך בשקט?</p>
-    <p class="hero-sub">מבחוץ הכל נראה רגוע, אבל בפנים הלב סוער והראש לא נותן מנוחה — ליווי לבחורים ואברכים שמכירים את התחושה הזו</p>
-    <a href="#contact" class="btn btn-primary">ליצירת קשר</a>
+<!-- HERO: INTRO -->
+<header class="hero intro" id="top">
+  <div class="container intro-inner">
+    <p class="intro-eyebrow reveal">נעים להכיר</p>
+    <h1 class="reveal">ישראל דפנה</h1>
+    <p class="intro-role reveal">מטפל רגשי מוסמך</p>
+    <p class="hero-sub reveal">אני מלווה בחורים ואברכים שמבחוץ הכל נראה אצלם רגוע, אבל בפנים הלב סוער והראש לא נותן מנוחה. בדרך שמשלבת עבודה רגשית עמוקה עם הסתכלות תורנית-אמונית, אני עוזר להבין מה באמת מפעיל אותך, להפסיק להילחם בעצמך ולבנות שלווה פנימית וביטחון אמיתי.</p>
+    <ul class="intro-points reveal">
+      <li><b>טיפול עומק</b><span>מגיעים לשורש, לא רק לסימפטומים</span></li>
+      <li><b>כלים מעשיים</b><span>להרגעה ולהתמודדות ביום-יום</span></li>
+      <li><b>יחס אישי</b><span>ליווי צמוד ודיסקרטי לאורך כל הדרך</span></li>
+    </ul>
+    <a href="#about-more" class="scroll-hint reveal">להכיר אותי ואת הדרך ↓</a>
   </div>
+  <svg class="wave wave-bottom" viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,90 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z" fill="var(--off)"/></svg>
 </header>
 
-<section class="problem">
-  <div class="container">
-    <h2>מוכר לך התחושה הזו?</h2>
-    <ul class="problem-list">
-      <li>מבחוץ הכל נראה רגוע, אבל בפנים הלב סוער והראש לא נח</li>
-      <li>מרוב רצון להיות "בסדר", אתה כבר שוכח איך מרגישים שלווה אמיתית</li>
-      <li>כל נפילה קטנה שוב מזכירה לך כמה אתה מאוכזב מעצמך</li>
-      <li>ביקורת עצמית קשה, פחד מנפילה, ותחושת עייפות תמידית</li>
-    </ul>
+<!-- CONTACT FORM -->
+<section class="sec off" id="about-more">
+  <div class="container contact-grid">
+    <div class="contact-text reveal">
+      <h2 class="sec-title start">רוצים לשמוע עוד?</h2>
+      <p class="lead">השאירו פרטים ואחזור אליכם בהקדם לשיחת היכרות ראשונית, ללא עלות וללא התחייבות. השיחה דיסקרטית לחלוטין.</p>
+      <ul class="checks dark-checks">
+        <li>שיחה אישית ודיסקרטית</li>
+        <li>נבין יחד מה עובר עליך ומה מפעיל אותך</li>
+        <li>תקבל כלים ראשונים כבר בשיחה</li>
+      </ul>
+    </div>
+    <div class="form-card reveal" id="contact">
+      <h2>התחילו את המסע לשקט נפשי</h2>
+      <p class="form-note">מלאו את הפרטים ונחזור אליכם בהקדם לשיחת ייעוץ ראשונית.</p>
+      <form id="contact-form" action="https://formspree.io/f/mbdvzbjq" method="POST">
+        <label for="name">שם מלא (חובה)</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">כתובת אימייל (חובה)</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">מספר טלפון (אופציונלי)</label>
+        <input type="tel" id="phone" name="phone">
+        <button type="submit" class="btn btn-dark btn-block">לשיחת אבחון ללא עלות</button>
+        <p id="form-status" class="form-status" role="status"></p>
+      </form>
+      <div class="card-contact">
+        <div class="who">
+          <span class="avatar">יד</span>
+          <div><strong>ישראל דפנה</strong><small>מטפל רגשי מוסמך</small></div>
+        </div>
+        <a href="tel:0548468217" class="c-line"><span class="ico">📞</span>054-846-8217</a>
+        <a href="mailto:i0548468217@gmail.com" class="c-line"><span class="ico">✉</span>i0548468217@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- VIDEO -->
+<section class="sec">
+  <div class="container narrow center">
+    <h2 class="sec-title reveal">ראו איך אנשים, בדיוק כמוכם, השאירו את התסכול מאחור ומצאו הקלה אמיתית.</h2>
+    <div class="video-box reveal">הכניסו את סרטון הוידאו שלכם כאן</div>
+    <a href="#contact" class="btn btn-dark">כן, אני רוצה לשמוע עוד</a>
   </div>
 </section>
 
-<section class="approach">
-  <div class="container">
-    <h2>הגישה שלי שונה</h2>
-    <p class="approach-text">
-      בתהליך רגוע, עדין וממוקד נלמד לזהות מה באמת מפעיל אותך, להפסיק להילחם בעצמך,
-      ולבנות <strong>שלווה פנימית וביטחון אמיתי</strong> — גם בתוך העומס.
-    </p>
-    <p class="approach-text">
-      הדרך שאני מלמד משלבת עומק רגשי והתכנסות תורנית-אמונית,
-      ומאפשרת עמידה אמיתית בלי לוותר על הערכים והאמונה שלך.
-    </p>
-    <p class="approach-text approach-note">
-      פגשתי כבר עשרות אברכים שנאבקו באותה נקודה בדיוק — והיום הם חיים עם שקט, בהירות וחיים מאוזנים מתוך אמונה.
-    </p>
+<!-- PROBLEM -->
+<section class="sec">
+  <div class="container split">
+    <div class="split-text reveal">
+      <h2 class="sec-title start">אם אתם מרגישים <span class="hl-box">תקועים בלופ</span>,<br>אתם לא לבד.</h2>
+      <p class="lead">האם אחד מהמשפטים הבאים נשמע לכם מוכר מדי?</p>
+      <ul class="xlist">
+        <li>אתם קמים כל בוקר עם <b>מועקה פיזית</b> בחזה, תחושה של משקולת על הלב שאי אפשר לשחרר.</li>
+        <li>המוח שלכם פשוט לא נכבה, חושב יותר מדי על כל דבר קטן ומרוקן אתכם מאנרגיה.</li>
+        <li>ניסיתם כבר הכל – טיפולים, ספרים, מדיטציות – אבל שום דבר לא באמת נוגע ב<b>שורש הבעיה</b>.</li>
+        <li>נמאס לכם מ<b>פתרונות זמניים</b> שהשפעתם נעלמת אחרי יומיים והלחץ חוזר תמיד.</li>
+        <li>אתם מרגישים שאתם חיים על אוטומט, רק שורדים את היום במקום באמת לחיות אותו.</li>
+        <li>קשה לכם להסביר לקרובים שלכם מה אתם עוברים, והעצות שלהם כמו "פשוט תשחרר" רק גורמות ליותר תסכול.</li>
+      </ul>
+      <div class="quote-box">
+        <p>אתם חיים במציאות של לחץ מתמיד, בזמן שאתם חולמים על משהו אחר לגמרי. אתם חולמים על היכולת פשוט <b>לנשום עמוק</b> ולהרגיש שקט אמיתי בראש. לקום בבוקר עם אנרגיה, לנהל את החיים שלכם במקום שהם ינהלו אתכם. אתם רוצים כלים מעשיים שיעזרו לכם ברגע האמת, ושאיפה אחת פשוטה – להרגיש שוב. להתרגש, לאהוב, ולהיות נוכחים ברגע.</p>
+        <p>הבעיה היא לא אתם. הבעיה היא שרוב הגישות מטפלות רק בסימפטומים, לא במקור של התקיעות. אתם לכודים ב"מעגל התסכול", שבו כל ניסיון לשינוי מוביל לאותה נקודה של ייאוש, עד שאתם מתחילים להאמין ששום דבר כבר לא יעזור. אבל זה לא חייב להיות ככה.</p>
+      </div>
+    </div>
+    <div class="photo-frame reveal"><img src="assets/hero.png" alt="אדם יושב על שפת אגם מול השקיעה"></div>
   </div>
 </section>
 
-<section class="how">
-  <div class="container">
-    <h2>איך זה עובד</h2>
-    <div class="how-grid">
-      <div class="how-item">
-        <h3>הדרגה האמיתית שלך</h3>
-        <p>בעז"ה נבין יחד מהי הדרגה הרוחנית האמיתית שלך — לא זו שאתה חושב שצריכה להיות.</p>
+<!-- BREAK THE CYCLE -->
+<section class="sec mint">
+  <div class="container center">
+    <h2 class="sec-title reveal">אבל מה אם הייתה דרך לפרוץ את המעגל הזה –<br>ולתמיד?</h2>
+    <p class="sec-sub reveal">אני ישראל דפנה, מטפל רגשי מוסמך, ובשנים האחרונות לויוויתי עשרות אנשים שהיו בדיוק איפה שאתם נמצאים עכשיו. גיליתי שפריצת דרך אמיתית לא דורשת שנים של טיפולים, אלא גישה ממוקדת שמטפלת בשורש הבעיה הרגשית ומעניקה לכם כלים מעשיים מהיום הראשון.</p>
+    <div class="cards3">
+      <div class="tcard reveal"><span class="ticon">🛡</span><p>גם להשתחרר מהמטענים הרגשיים של העבר <b>וגם</b> לבנות חוסן נפשי ועוצמה להתמודד עם אתגרי המחר.</p></div>
+      <div class="tcard reveal"><span class="ticon">⚡</span><p>גם לקבל כלים פרקטיים להרגעה מיידית <b>וגם</b> לטפל בשורש העמוק של הלחץ והחרדה.</p></div>
+      <div class="tcard reveal"><span class="ticon">♡</span><p>גם להגיע לשקט נפשי ואיזון פנימי <b>וגם</b> לראות תוצאות מוחשיות בקריירה ובמערכות היחסים שלכם.</p></div>
+    </div>
+    <p class="after-cards">השיטה הזו לא נועדה לכולם, אבל אם אתם רציניים לגבי יצירת <b>חיים חדשים</b>, היא יכולה להיות <b>בדיוק בשבילכם</b>.</p>
+    <a href="#contact" class="btn btn-dark">התחילו את המסע לשקט נפשי</a>
+  </div>
+</section>
+
+<!-- STATS + METHOD -->
+<section class="dark method">
+  <svg class="hills" viewBox="0 0 1440 120" preserveAspectRatio="none">
+    <path d="M0,80 C200,20 400,100 640,50 C880,0 1100,90 1440,40 L1440,0 L0,0 Z" fill="var(--mint)"/>
+    <path d="M0,100 C240,50 480,120 720,70 C960,20 1200,110 1440,60 L1440,120 L0,120 Z" fill="#4b6f60" opacity=".45"/>
+  </svg>
+  <div class="container center">
+    <p class="stats-title reveal">מספרים שמראים שהשינוי אפשרי וקרוב מתמיד</p>
+    <div class="stats reveal">
+      <div><strong>90 יום</strong><span>זמן ממוצע להרגשת שינוי יסודי בחיים</span></div>
+      <div><strong>100%</strong><span>התאמה אישית של הכלים לכל מטופל</span></div>
+      <div><strong>24/6</strong><span>זמינות וליווי צמוד גם בין המפגשים</span></div>
+    </div>
+
+    <h2 class="sec-title light reveal">הכירו את "מפת הדרכים לשקט נפשי": השיטה שתחזיר לכם את השליטה</h2>
+    <p class="sec-sub light reveal">זה לא עוד טיפול. זוהי <b>השיטה המוכחת</b> שמחברת בין הבנת שורש הבעיה לבין כלים מעשיים שתוכלו ליישם באופן מיידי. אנחנו לא "רק מדברים", אנחנו עושים. <b>צעד אחר צעד</b>, אנחנו בונים לכם תוכנית אישית שמובילה לתוצאות.</p>
+
+    <div class="timeline">
+      <div class="tl-item right reveal"><span class="tl-num">1</span>
+        <h3>אבחון שורש הבעיה</h3>
+        <p>במקום להתמקד בסימפטומים, אנחנו יורדים לעומק. נזהה יחד את החסמים הרגשיים והאמונות המגבילות שגורמים לכם "לדרוך במקום" כבר שנים. תבינו סוף סוף <i>למה</i> אתם מרגישים כמו שאתם מרגישים.</p>
       </div>
-      <div class="how-item">
-        <h3>הסיבה לאכזבה</h3>
-        <p>נזהה מה באמת גורם לך להתאכזב מעצמך, ונבדוק אם זו תמונה נכונה או מעוותת.</p>
+      <div class="tl-item left reveal"><span class="tl-num">2</span>
+        <h3>בניית ארגז כלים אישי</h3>
+        <p>תקבלו כלים פרקטיים ומוכחים מבוססי NLP ותהליכי עבודה עם התת-מודע, שתוכלו להשתמש בהם בכל רגע נתון:</p>
+        <ul class="vlist"><li>טכניקות להרגעה מיידית של חרדה ולחץ.</li><li>כלים לניהול מחשבות טורדניות ושבירת לופים של דאגה.</li><li>שיטות לשחרור כעסים ותסכולים בצורה בריאה.</li></ul>
       </div>
-      <div class="how-item">
-        <h3>שחרור ממה שתוקע</h3>
-        <p>אם יש דברים שלוקחים אותך ומונעים ממך להתקדם — נעבוד יחד להשתחרר מהם.</p>
+      <div class="tl-item right reveal"><span class="tl-num">3</span>
+        <h3>הטמעה וליווי</h3>
+        <p>השינוי האמיתי קורה ביום-יום, לא רק בקליניקה. לכן תקבלו ליווי ותמיכה גם בין המפגשים, כדי להבטיח שהכלים החדשים הופכים לחלק מכם ושהשינוי נשמר לטווח ארוך.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="contact" class="contact">
-  <div class="container">
-    <h2>בואו נדבר</h2>
-    <p class="contact-sub">מוזמנים לשיחת ייעוץ ראשונית ללא תשלום — נבין יחד מה עובר עליך ונזהה את השורש, או צרו קשר ישירות</p>
+<!-- FUTURE -->
+<section class="sec">
+  <div class="container narrow center">
+    <p class="eyebrow reveal">עצמו את העיניים ודמיינו את זה לרגע...</p>
+    <h2 class="sec-title reveal">תארו לעצמכם שאתם קמים בבוקר בעוד 90 יום מהיום.</h2>
+    <p class="sec-sub reveal">אתם לוקחים נשימה עמוקה, והפעם, אין שום מועקה בחזה. הכתפיים שלכם רפויות, הראש שלכם שקט. המחשבות הטורדניות שניהלו אתכם פשוט נעלמו, ובמקומן יש תחושה שלווה של שליטה.</p>
+    <p class="strong-line reveal">אתם יוצאים מהבית ומרגישים אחרת. אתם לא שורדים את היום, אתם חווים אותו.</p>
+    <div class="future-grid">
+      <div class="fcard reveal"><span>👍</span><p>אתם מרגישים <b>אנרגיה וחיות</b> שלא הרגשתם שנים.</p></div>
+      <div class="fcard reveal"><span>✔</span><p>אתם מקבלים החלטות בקלות ובביטחון, <b>בלי הדאגות</b> והפחדים ששיתקו אתכם בעבר.</p></div>
+      <div class="fcard reveal"><span>👥</span><p>אתם נוכחים ברגע עם האנשים שאתם אוהבים, במקום להיות שקועים במחשבות.</p></div>
+      <div class="fcard reveal"><span>⌂</span><p>אתם חוזרים הביתה מהעבודה ויש לכם סבלנות ופניות למשפחה ולעצמכם.</p></div>
+      <div class="fcard wide reveal"><span>☺</span><p>אתם מסתכלים במראה ומחייכים, כי סוף סוף אתם מרגישים טוב עם מי שאתם.</p></div>
+    </div>
+    <p class="strong-line big reveal">זו לא פנטזיה. זו המציאות שמחכה לכם בצד השני של ההחלטה לעשות שינוי אמיתי.</p>
+    <a href="#contact" class="btn btn-dark">אני רוצה את העתיד הזה</a>
+  </div>
+</section>
 
-    <form id="contact-form" action="https://formspree.io/f/mbdvzbjq" method="POST">
-      <input type="text" name="name" placeholder="שם מלא" required>
-      <input type="tel" name="phone" placeholder="טלפון" required>
-      <textarea name="message" placeholder="ספר/י בקצרה במה תרצה עזרה" rows="4"></textarea>
-      <button type="submit" class="btn btn-primary">שלח פנייה</button>
-      <p id="form-status" class="form-status"></p>
-    </form>
-
-    <div class="direct-contact">
-      <a href="tel:0548468217" class="btn btn-secondary">📞 התקשרו: 054-846-8217</a>
-      <a href="mailto:i0548468217@gmail.com" class="btn btn-secondary" id="email-link">✉️ שלחו מייל</a>
-      <p id="email-hint" class="email-hint" aria-live="polite"></p>
+<!-- TESTIMONIALS -->
+<section class="sec off">
+  <div class="container center">
+    <h2 class="sec-title reveal">התוצאות של הלקוחות שלנו מדברות בעד עצמן</h2>
+    <p class="sec-sub">הצטרפו לעשרות אנשים שכבר עשו את הצעד לעבר חיים טובים יותר</p>
+    <div class="grid2">
+      <div class="video-box sm">[סרטון המלצה]</div>
+      <div class="video-box sm">[סרטון המלצה]</div>
+      <div class="testi reveal"><span class="qmark">“</span><p>"כאן תופיע המלצה"</p><div class="t-who"><span class="avatar sm">א</span><div><strong>שם הממליץ</strong><small>פרטים</small></div></div></div>
+      <div class="testi reveal"><span class="qmark">“</span><p>"כאן תופיע המלצה"</p><div class="t-who"><span class="avatar sm">ב</span><div><strong>שם הממליץ</strong><small>פרטים</small></div></div></div>
+    </div>
+    <div class="gallery">
+      <figure class="reveal"><img src="assets/dandelion.jpg" alt="שן הארי מול השקיעה"><figcaption>[יש להוסיף כאן תוכן]</figcaption></figure>
+      <figure class="reveal"><img src="assets/mountain.jpg" alt="אדם על הר בשקיעה"><figcaption>[יש להוסיף כאן תוכן]</figcaption></figure>
     </div>
   </div>
 </section>
 
-<footer class="site-footer">
+<!-- PROCESS -->
+<section class="sec mint">
+  <div class="container narrow center">
+    <h2 class="sec-title reveal">אז איך בדיוק עובד התהליך?</h2>
+    <p class="sec-sub">הנה המסלול המדויק, שלב אחר שלב:</p>
+    <ol class="steps">
+      <li class="reveal"><span>1</span><div><h3>שיחת אבחון ראשונית (ללא עלות):</h3><p>נקיים שיחה קצרה כדי להבין לעומק את האתגר שלכם ולוודא שהתהליך מתאים לכם. זהו שלב קריטי שבו נבדוק שיש התאמה מלאה בינינו.</p></div></li>
+      <li class="reveal"><span>2</span><div><h3>פגישת יסודות מעמיקה:</h3><p>בפגישה הראשונה שלנו נצלול לשורש הבעיה, נמפה את כל החסמים ונבנה יחד תוכנית פעולה אישית ומותאמת בדיוק לצרכים שלכם.</p></div></li>
+      <li class="reveal"><span>3</span><div><h3>סדרת מפגשים ממוקדים:</h3><p>ניפגש באופן קבוע לסדרת מפגשים אינטנסיביים שבהם נטמיע את הכלים, נשחרר את המטענים הרגשיים וניצור שינוי עמוק ויציב. זהו <b>תהליך פשוט</b> וישיר.</p></div></li>
+      <li class="reveal"><span>4</span><div><h3>ליווי ותמיכה בין המפגשים:</h3><p>אתם לא לבד במסע הזה. תקבלו <b>ליווי אישי</b> ותמיכה זמינה בטלפון לכל שאלה, אתגר או צורך בשיתוף.</p></div></li>
+      <li class="reveal"><span>5</span><div><h3>מדידה והערכת תוצאות:</h3><p>נוודא כל הזמן שאנחנו בכיוון הנכון, שהשגנו את המטרות שהצבנו, ושאתם מרגישים את השינוי בכל תחומי החיים שלכם.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="sec">
+  <div class="container split">
+    <div class="split-text reveal">
+      <h2 class="sec-title start">גם אני הייתי שם, לכוד בתוך אותה תחושת תקיעות</h2>
+      <p>לפני שנים, גם אני חייתי בתוך "מעגל התסכול". קמתי כל בוקר עם לחץ בחזה, הרגשתי שאני לא ממשש את הפוטנציאל שלי, וכל יום נראה כמו עותק של קודמו. <b>הרגשתי שבור מבפנים</b>. ניסיתי פתרונות שונים, דיברתי עם אנשי מקצוע, אבל שום דבר לא באמת חדר את חומת הייאוש.</p>
+      <h3>התפנית ששינתה הכל</h3>
+      <p>השינוי הגיע כשהבנתי שרוב הגישות מנסות לתקן את המחשבות, במקום לטפל ישירות ברגש שיוצר אותן. התחלתי לחקור לעומק את עולם התת-מודע, למדתי והתמחיתי בשיטות NLP וכלים מתקדמים לעבודה רגשית. שם גיליתי את המפתח: היכולת לגשת ישירות לשורש הבעיה ולשחרר את המטענים הרגשיים מהמקור, במקום רק לנהל את הסימפטומים.</p>
+      <h3>למה אני עושה את זה?</h3>
+      <p>המסע האישי שלי הפך לשליחות שלי. אחרי שחוויתי על בשרי מהי פריצת דרך אמיתית, אני יודע שזה אפשרי עבור כל אחד. אני עושה את זה כי אני מאמין ששום אדם לא צריך לחיות חיים של סבל, תסכול ותקיעות. המשימה שלי היא לתת לכם את הכלים, הליווי והביטחון כדי שגם אתם תוכלו להגיע לשקט הנפשי, לאיזון ולשמחת החיים שמגיעים לכם.</p>
+    </div>
+    <div class="photo-frame dark-photo reveal">
+      <img src="assets/peace.jpg" alt="סמל שלום זוהר בין עשבים">
+      <div class="name-badge"><strong>ישראל דפנה</strong><small>מטפל רגשי מוסמך</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section class="dark offer">
+  <div class="container center">
+    <h2 class="sec-title light reveal">מה אתם מקבלים במעטפת השירות המלאה ליצירת שינוי אמיתי?</h2>
+    <div class="table-wrap reveal">
+      <table class="offer-table">
+        <thead><tr><th>רכיב</th><th>תועלת</th><th>שווי</th></tr></thead>
+        <tbody>
+          <tr><td>סדרת מפגשי טיפול 1:1 ממוקדים</td><td>טיפול שורש עמוק ויסודי בחסמים הרגשיים שמעכבים אתכם</td><td><s>₪4,000</s></td></tr>
+          <tr><td>בניית 'ארגז כלים' רגשי אישי</td><td>כלים מעשיים וזמינים להתמודדות עם לחץ וחרדה בזמן אמת</td><td><s>₪1,500</s></td></tr>
+          <tr><td>ליווי ותמיכה אישית בטלפון</td><td>ביטחון מלא שיש לכם גב מקצועי בין המפגשים, לכל אתגר</td><td><s>₪1,200</s></td></tr>
+          <tr><td>הקלטות של תרגולים מותאמים אישית</td><td>יכולת להטמיע את השינוי גם בבית, בקצב שלכם</td><td><s>₪800</s></td></tr>
+          <tr class="bonus"><td>בונוס: פגישת מעקב לאחר 3 חודשים</td><td>וידוא שהשינוי נשמר וקיבוע ההצלחה לטווח ארוך</td><td><s>₪500</s></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="price-box reveal">
+      <p class="total">שווי כולל: <s>₪8,000</s></p>
+      <h3>ההשקעה שלכם היום:</h3>
+      <p class="accent">צרו קשר לקבלת פרטים על שיחת אבחון ללא עלות</p>
+      <a href="#contact" class="btn btn-white">אני רוצה להתחיל את השינוי</a>
+    </div>
+  </div>
+</section>
+
+<!-- FIT -->
+<section class="sec off">
+  <div class="container center">
+    <h2 class="sec-title reveal">למי התהליך הזה מיועד (ולמי הוא פחות מתאים)</h2>
+    <div class="grid2 fit">
+      <div class="fit-card yes reveal"><h3><span>✓</span> התהליך הזה בשבילכם אם:</h3><p>אתם מרגישים תקועים ומוכנים לעשות עבודה אמיתית כדי לצאת מזה. אתם מבינים שאין פתרונות קסם ומחפשים ליווי מקצועי שיעזור לכם להגיע לשורש הבעיה. אתם מחויבים לתהליך, פתוחים לגישה חדשה ורוצים תוצאות שנשארות לטווח ארוך. אתם שואפים ליותר מסתם "להרגיש בסדר" – אתם רוצים להרגיש מצוין.</p></div>
+      <div class="fit-card no reveal"><h3><span>✕</span> התהליך הזה פחות יתאים אם:</h3><p>אתם מחפשים כדור קסם או פתרון מהיר בן לילה. אתם לא פנויים רגשית או מנטלית להשקיע בתהליך עומק. אתם לא מאמינים ביכולת שלכם להשתנות ומחפשים מישהו שיעשה את העבודה "במקומכם". אם אתם סקפטיים באופן קיצוני ולא מוכנים לנסות גישה שונה ממה שהכרתם עד היום.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTIONS -->
+<section class="sec">
+  <div class="container narrow">
+    <h2 class="sec-title reveal">אני יודע – כמה מחשבות עוברות לכם בראש כרגע...</h2>
+    <div class="obj reveal"><h3>"ניסיתי כבר טיפולים אחרים, מה שונה פה? אני חושש שוב לאכזב וזה <b>לא יעבוד עליי</b>."</h3><p>זו מחשבה הגיונית לחלוטין, במיוחד אם נפגעתם בעבר. ההבדל המרכזי כאן הוא הגישה. אנחנו לא נשארים ברמת הדיבורים. אנחנו יורדים לשורש הרגשי בתת-המודע, המקום שבו הבעיות באמת נוצרות, ונותנים לכם כלים מעשיים מהיום הראשון. התהליך ממוקד תוצאות, ואתם תרגישו את השינוי כבר מהמפגשים הראשונים.</p></div>
+    <div class="obj reveal"><h3>"אני מרגיש שזה <b>מאוחר מדי להשתנות</b>. ההרגלים והפחדים שלי כל כך עמוקים."</h3><p>זו אחת האמונות המגבילות הנפוצות ביותר, והיא פשוט לא נכונה. המוח שלנו גמיש ויכול להשתנות בכל גיל. השיטות שבהן אנחנו משתמשים עובדות ישירות עם תת-המודע כדי ליצור "חיווט מחדש" של דפוסים ישנים. זה לא משנה כמה זמן אתם סוחבים את המטען הזה – אפשר לשחרר אותו.</p></div>
+    <div class="obj reveal"><h3>"תהליך כזה בטח עולה המון כסף, ואני לא בטוח שאני יכול להרשות את זה לעצמי כרגע."</h3><p>זו שאלה של השקעה מול עלות. כמה עולה לכם להישאר במקום? כמה שווה לכם לקום בבוקר עם שקט נפשי? כמה הייתם משלמים כדי להרגיש אנרגטיים, בטוחים בעצמכם ומלאי שמחת חיים? זוהי השקעה בעצמכם, בבריאות הנפשית שלכם ובעתיד שלכם, והתשואה שלה לא תסולא בפז.</p></div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="sec mint">
+  <div class="container narrow center">
+    <div class="g-icon reveal">🛡</div>
+    <h2 class="sec-title reveal">האחריות המלאה שלנו לשקט הנפשי שלכם</h2>
+    <p class="sec-sub reveal">אני כל כך בטוח בתהליך וביכולת שלו לחולל שינוי, שאני לוקח את כל הסיכון על עצמי. אני מתחייב באופן אישי לשביעות הרצון המלאה שלכם מהתהליך. אם בסיום סדרת המפגשים שנקבע, תרגישו שלא קיבלתם ערך משמעותי ולא חוויתם שינוי, תקבלו את כספכם בחזרה. בלי שאלות, בלי אותיות קטנות. ה<b>סיכון הוא כולו עלינו</b>.</p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="dark final">
+  <div class="container narrow center">
+    <h2 class="sec-title light reveal">הגיע הזמן שלכם להשאיר את המועקה מאחור ולהתחיל לחיות</h2>
+    <p class="sec-sub light reveal">אתם נמצאים במרחק החלטה אחת מהחיים שאתם באמת רוצים לחיות. חיים של שקט, איזון, ביטחון ושמחה. אל תחכו עוד יום אחד. הצעד הראשון הוא הפשוט ביותר.</p>
+    <span class="pill pill-dark">100% ללא התחייבות, שיחה דיסקרטית</span>
+    <a href="#contact" class="btn btn-white btn-lg">התחילו את השינוי עכשיו</a>
+    <p class="small-note">האחריות המלאה שלנו מבטיחה שאין לכם מה להפסיד</p>
+  </div>
+</section>
+
+<footer class="footer">
   <div class="container">
-    <p class="brand-name">ישראל דפנה</p>
-    <p class="brand-title">מטפל רגשי מוסמך</p>
-    <p>054-846-8217 &nbsp;|&nbsp; i0548468217@gmail.com</p>
-    <p class="copyright">&copy; <span id="year"></span> כל הזכויות שמורות</p>
+    <div class="f-row"><strong>ישראל דפנה</strong><span>מטפל רגשי מוסמך</span><a href="tel:0548468217">054-846-8217</a><a href="mailto:i0548468217@gmail.com">i0548468217@gmail.com</a></div>
+    <p class="copy">© <span id="year"></span> כל הזכויות שמורות לישראל דפנה</p>
   </div>
 </footer>
 
