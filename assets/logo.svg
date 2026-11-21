@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 230" direction="rtl">
+  <!-- Leaves / branch -->
+  <g fill="#8fae9f">
+    <path d="M150 92 C152 70 160 52 170 38" stroke="#7d968a" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <ellipse cx="172" cy="28" rx="5" ry="11" transform="rotate(15 172 28)" fill="#1f3554"/>
+    <ellipse cx="158" cy="40" rx="5" ry="12" transform="rotate(-40 158 40)"/>
+    <ellipse cx="184" cy="46" rx="5" ry="12" transform="rotate(55 184 46)"/>
+    <ellipse cx="152" cy="60" rx="5" ry="12" transform="rotate(-60 152 60)"/>
+    <ellipse cx="178" cy="66" rx="5" ry="11" transform="rotate(65 178 66)"/>
+    <circle cx="168" cy="84" r="4.5" fill="#a9c2b6"/>
+  </g>
+  <!-- Sage curved shape -->
+  <path d="M150 128 C180 136 205 118 200 96 C196 80 178 78 172 90" stroke="#7d968a" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M118 132 C140 146 175 146 205 132" stroke="#9fb6aa" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Navy serif I -->
+  <text x="132" y="128" font-family="Georgia, 'Times New Roman', serif" font-size="78" fill="#1f3554" text-anchor="middle">I</text>
+  <!-- Name -->
+  <text x="150" y="182" font-family="'Assistant', 'Heebo', Arial, sans-serif" font-size="38" font-weight="600" text-anchor="middle"><tspan fill="#1f3554">ישראל </tspan><tspan fill="#7d968a">דפנה</tspan></text>
+  <line x1="60" y1="196" x2="240" y2="196" stroke="#c9d6cf" stroke-width="1"/>
+  <text x="150" y="216" font-family="'Assistant', Arial, sans-serif" font-size="16" font-weight="600" fill="#1f3554" text-anchor="middle">עומק טיפולי שחרור אמיתי</text>
+</svg>
