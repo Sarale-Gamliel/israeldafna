@@ -360,3 +360,22 @@ h1, h2, h3 { font-family: 'Heebo', 'Assistant', sans-serif; line-height: 1.25; c
 .testi p + p { margin-top: -4px; }
 .testi p { font-style: normal; font-weight: 600; line-height: 1.8; }
 
+
+/* Testimonials carousel */
+.carousel { position: relative; margin-top: 30px; }
+.car-track {
+  display: flex; gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+  padding: 10px 4px 24px; scrollbar-width: none;
+}
+.car-track::-webkit-scrollbar { display: none; }
+.car-track .testi { flex: 0 0 calc((100% - 44px) / 3); scroll-snap-align: start; max-height: 440px; overflow-y: auto; }
+.car-btn {
+  position: absolute; top: 45%; z-index: 2; width: 44px; height: 44px; border-radius: 50%; border: 0;
+  background: var(--green); color: #fff; font-size: 1.6rem; cursor: pointer; box-shadow: var(--shadow);
+}
+.car-btn.prev { right: -22px; }
+.car-btn.next { left: -22px; }
+@media (max-width: 900px) {
+  .car-track .testi { flex-basis: 85%; }
+  .car-btn.prev { right: 0; } .car-btn.next { left: 0; }
+}

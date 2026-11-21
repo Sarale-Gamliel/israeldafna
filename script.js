@@ -33,3 +33,10 @@ form.addEventListener('submit', async (e) => {
     status.classList.add('error');
   }
 });
+
+const track = document.getElementById('testi-track');
+if (track) {
+  const step = () => track.querySelector('.testi').offsetWidth + 22;
+  document.querySelector('.car-btn.next').addEventListener('click', () => track.scrollBy({ left: -step() }));
+  document.querySelector('.car-btn.prev').addEventListener('click', () => track.scrollBy({ left: step() }));
+}
